@@ -125,8 +125,7 @@ always_comb begin
 			mem_read = 1'b0;
 	end else if (INSTRUCTION[8:4] == 5'b01111) begin // done
 			done = 1'b1;
-		end
+	end
 end
 
 endmodule
-
