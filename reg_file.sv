@@ -27,7 +27,10 @@ always_ff @ (posedge clk) begin
 		for (int i = 0; i < 2**D; i++)
 			registers[i] <= 'd0;
 	end
-	if (write_en)
+	
+	if (write_en) begin
 		registers[waddr] <= data_in;
 	end
+end
+	
 endmodule
