@@ -14,15 +14,15 @@ module data_mem(
 	end
 	
 	always_comb begin
-		if(mem_read_en) begin
+		if(mem_read_en) 
 			data_out = core[mem_address];
-		end else
+		else
 			data_out = 8'bZ;
 	end
 	
 	always_ff @ (posedge clk) begin
-		if(mem_write_en) begin
+		if(mem_write_en) 
 			core[mem_address] <= data_in;
-		end
 	end
+	
 endmodule
