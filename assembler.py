@@ -2,7 +2,7 @@ lineNumber = 0
 
 #Valid variable names and their machine code equivalents (e.g. P0 -> 000 in the instruction)
 #Note that input is set to lower case, so e.g. both I and i work fine.
-regs = {"r0": "0", "r1": "1","r2": "2","r3": "3","r4": "4","r5": "5","r6": "6","r7": "7","r8": "8","r9": "9","r10": "10","r11": "11","r12": "12","r13": "13","r14": "14","r15": "15"}
+regs = {"r0": "0", "r1": "1", "r2": "2", "r3": "3", "r4": "4", "r5": "5", "r6": "6", "r7": "7", "r8": "8", "r9": "9", "r10": "10", "r11": "11", "r12": "12", "r13": "13", "r14": "14", "r15": "15"}
 
 #Method to convert a given assembly line into a machine code instruction
 def convertLine(line):
