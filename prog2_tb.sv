@@ -16,7 +16,7 @@ wire done;			 // ack -- from DUT -- done w/ program
 
 // program 1-specific variables
 bit  [11:1] d1_in[15];           // original messages
-logic      p0, p8, p4, p2, p1;  // Hamming block parity bits
+logic p0, p8, p4, p2, p1;  	// Hamming block parity bits
 logic[15:0] d1_out[15];          // orig messages w/ parity inserted
 
 // program 2-specific variables
